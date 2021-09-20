@@ -3,6 +3,6 @@ var app = express();
 
 app.use(express.static('./'));
 
-var porta = 5056;
+var porta = process.env.PORT || 3878
 
 module.exports = {app, porta};
